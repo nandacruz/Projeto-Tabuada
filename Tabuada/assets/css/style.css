@@ -1,0 +1,177 @@
+
+/*seletor universal ; *
+  seletor de classe: .
+  seletor de id : #
+  seletor de pseudo : "a:link"(exemplo)*/
+
+
+/*isto é um seletor universal, ele vai ser aplicado em todo documento*/
+*{
+    box-sizing: border-box;
+    /*familia textual dos elementos*/
+    /*nota: há mais de uma fonte para o caso da primeira não estar disponivel*/
+    /*sans-serif: qualquer outra fonte*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: #f2f2f2;
+}
+/*dando largura maxima, ajustando seu maximo de expansão, ajustando as margens*/
+.content-center{
+    /*largura*/
+    width: 100%;
+    /*largura maxima*/
+    max-width: 300px;
+    /*margem*/
+    margin: auto;
+    /*afastamento da margem*/
+    padding: 20px;
+    /*cor de fundo*/
+    background-color: #FFF;
+    /*bordas*/
+    border-radius: 15px ;
+}
+
+/*centralizando img(nota: como content foi declarado como uma classe, usamos ".")*/
+.content-center .text-center{
+    text-align: center;
+}
+/*ajustando tamanho de todas as imgs dentro dessa classe*/
+.content-center img{
+    width: 70%;
+}
+
+/*box-size : usa a borda do elemento, sem estourar a largura da img*/
+
+
+/*margem do formulario*/
+.content-center form{
+    margin: 20px;
+}
+/*inputs do formulario*/
+.content-center input,
+.content-center button{
+    width: 100%;
+    padding: 10px 5px;
+    /*borda do input*/
+    border: none;
+    /*tira ou coloca o foco na caixa de seleção*/
+    outline: none;
+    
+
+}
+
+.content-center input{
+    /*editando as bordas do bottom*/
+    border-bottom-color: #CCC;
+    border-bottom-style: solid;
+    border-bottom-width: 2px ;
+    /*espaçamento*/
+    margin-bottom: 10px;
+}
+
+/*pseudo seletor para mudar a cor da caixa de texto quando ele for focado no input*/
+.content-center input:focus{
+    /*editando as bordas do bottom*/
+    border-bottom-color: #D07335;    
+}
+
+.content-center button{
+
+    /*cor*/
+    background-color: #D07335;
+    color: #FFF;
+}
+
+/*pseudo seletor: serve para quando queremos mudar a cor de algo que esta com o cursor encima*/
+.content-center button:hover{
+
+    /*cor*/
+    background-color: #B55B28;
+    /*mudando cursor(mãozinha)*/
+    cursor: pointer;    
+}
+
+/*pseudo seletor para quando clicamos em algo*/
+.content-center button:active{
+
+    /*cor*/
+    background-color: #C14E0E;
+    /*mudando cursor*/
+    cursor: pointer;    
+}
+
+header a{
+    color: #666;
+    /*tirando ou colocando sublinhado(e outras coisas tbm)*/
+    text-decoration: none;
+}
+/*mostra quando um link ja foi clicado*/
+header a:visited{
+    color: #000;    
+}
+/*transformando em clicavel*/
+header a:hover{
+    text-decoration: underline;
+}
+/*quando é focado/clicado*/
+header a:focus{
+    color: red;
+}
+/*quando é ativado*/
+header a:active{
+    color: yellow ;
+}
+header h1{
+    /*tamanho da fonte(proporcional)*/
+    font-size: 2.5em;
+    text-align: center;
+    /*#,#, - encima/embaixo,dos lados*/
+    margin: 50px auto;
+}
+
+footer {
+    /*1 é o tamanho padrão*/
+   font-size: .8em; 
+   text-align: center;   
+}
+
+.content-tabuada {
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    padding: 20px;
+}
+/*aproveitando 100% do espaço na tabela*/
+.content-tabuada table{
+    width: 100%;
+    /*tirando espaçamento da tabela*/
+    border-collapse:collapse ;
+}
+.content-tabuada td{
+    padding: .75rem;
+    border: 1px solid #DEE2E6;
+}
+/*dando estilo zebrado por elemento (odd/even- para alternar ou um numeropara selecionar em especifico)*/
+.content-tabuada tbody tr:nth-child(odd){
+    background-color: rgba(0,0,0,.05);
+
+}
+/*feedback de quando o mouse esta passando por cima do elemento*/
+.content-tabuada tbody tr:hover{
+    /*o ultimo numero é a transparencia*/
+    background-color: rgba(0,0,0,.15);
+    cursor: pointer;
+
+}
+
+#valorA{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+

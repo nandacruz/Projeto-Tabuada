@@ -5,8 +5,6 @@ Pequeno e simples projeto de uma tabuada, baseado no curso de HTML5 da <a href =
 
 Instrutores: 
 
-HCode Treinamentos
-
 - João Rangel
 - Glaucio Daniel Souza Santos
 - Djalma Sindeaux

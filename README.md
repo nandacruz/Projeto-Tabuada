@@ -3,7 +3,7 @@ Pequeno e simples projeto de uma tabuada, baseado no curso de HTML5 da <a href =
 
 <img src="https://github.com/nandacruz/Projeto-Tabuada/blob/master/Tabuada/project_img/Screenshot.png">
 
-Instrutores: 
+<h2>Instrutores</h2> 
 
 - João Rangel
 - Glaucio Daniel Souza Santos
